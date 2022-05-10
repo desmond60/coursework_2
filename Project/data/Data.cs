@@ -41,7 +41,7 @@ public class Data
 
         // Генерация сетки по времени
         int n = k_t != 1
-               ? (int)(Log(1 - (end_t - start_t)*(k_t - 1) / h_t) / Log(k_t) + 2)
+               ? (int)(Log(1 - (end_t - start_t)*(k_t - 1) / (h_t*(-1))) / Log(k_t) + 2)
                : (int)((end_t - start_t) / h_t + 1);
         time = new Vector(n);
         time[0] = start_t;
