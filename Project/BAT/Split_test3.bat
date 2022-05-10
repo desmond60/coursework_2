@@ -1,0 +1,1 @@
+dotnet run -i files/SPLIT/test3/test3.json

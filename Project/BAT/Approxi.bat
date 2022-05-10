@@ -1,0 +1,1 @@
+dotnet run -i files/Approxi/test.json
