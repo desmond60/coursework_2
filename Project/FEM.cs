@@ -40,6 +40,7 @@ public class FEM
         //? Подсчет для каждого слоя (начиная с 3)
         for (int i = 2; i < Time.Length; i++) {
             global(i);                                  //? Составление глобальной матрицы
+            Vector.Copy(Uprev2, slau.q);                //? Начальное приближение
             LOS los = new LOS(slau, 10000, 9e-030);     //? Создание метода LOS
             los.solve(true);                            //? Решение СЛАУ методом ЛОС (диагональный)
             AbsolutSolve(i);                            //? Подсчет абсолютного значения на слое
