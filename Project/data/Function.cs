@@ -28,7 +28,7 @@ public static class Function
             2 => 2*x + y + t,                       /// OneFilEl_SecondKraev
             3 => 2*x + y + t,                       /// OneFilEl_ThirdKraev
             4 => 10*x + 10*y + 10*t,                /// Split-test
-            5 => Sin(x + y) + t*t*t,                /// Approxi    
+            5 => t*t*t,                             /// Approxi    
 
             _ => 0,
         };
@@ -43,7 +43,7 @@ public static class Function
             2 => 5,                                     /// OneFilEl_SecondKraev
             3 => 5,                                     /// OneFilEl_ThirdKraev
             4 => 10,                                    /// Split-test
-            5 => 4*Sin(x + y) + 3*t*t + 6*t,            /// Approxi
+            5 => 3*t*t + 6*t,                           /// Approxi
 
             _ => 0,
         };
@@ -135,10 +135,10 @@ public static class Function
             case 5:                                  /// Approxi
             return count_kraev switch
             {
-                0 => Sin(1 + x) + t*t*t, 
-                1 => Sin(5 + y) + t*t*t,
-                2 => Sin(9 + x) + t*t*t,
-                3 => Sin(1 + y) + t*t*t,
+                0 => t*t*t, 
+                1 => t*t*t,
+                2 => t*t*t,
+                3 => t*t*t,
                 _ => 0
             };
 
