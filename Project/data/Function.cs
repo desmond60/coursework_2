@@ -43,7 +43,7 @@ public static class Function
             2 => 5,                                     /// OneFilEl_SecondKraev
             3 => 5,                                     /// OneFilEl_ThirdKraev
             4 => 10,                                    /// Split-test
-            5 => 3*t*t + 6*t,                           /// Approxi
+            5 => 3*t*t,                                 /// Approxi
 
             _ => 0,
         };
@@ -88,7 +88,7 @@ public static class Function
             2 => 2,                     /// OneFilEl_SecondKraev
             3 => 2,                     /// OneFilEl_ThirdKraev
             4 => 3,                     /// Split-test
-            5 => 1,                     /// Approxi
+            5 => 0,                     /// Approxi
 
             _ => 0,
         };
